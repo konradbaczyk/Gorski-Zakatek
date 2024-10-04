@@ -1,0 +1,67 @@
+@use "./variables" as *;
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 2000px;
+}
+
+.section {
+	padding: 6rem 2rem 4rem;
+}
+
+.section-title {
+	margin-bottom: 4rem;
+	font-family: $lato-thin, sans-serif;
+	font-size: 5rem;
+	color: $text-brown;
+}
+
+.section-text {
+	font-size: 3rem;
+	color: $text-brown;
+}
+
+.text-content,
+.section-text {
+	font-family: $lato-light;
+}
+
+.link-text {
+	font-family: $lato-bold, sans-serif;
+}
+
+.logo {
+	font-family: $logo-font, sans-serif;
+}
+
+// MEDIA QUERIES
+@media (min-width: 576px) {
+	.section-title {
+		font-size: 7rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.section-title {
+		margin-bottom: 7rem;
+		font-size: 8rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.section {
+		padding: 9rem 2rem;
+	}
+
+	.section-title {
+		margin-bottom: 8rem;
+		font-size: 10rem;
+	}
+}
+
+@media (min-width: 1600px) {
+	.section-title {
+		width: 37%;
+	}
+}

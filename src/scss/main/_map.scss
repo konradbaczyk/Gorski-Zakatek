@@ -1,0 +1,11 @@
+@use "../utils/variables" as *;
+
+.map {
+	height: 50svh;
+}
+
+@media (min-width: 992px) {
+	.map {
+		height: 60svh;
+	}
+}

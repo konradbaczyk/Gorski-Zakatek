@@ -1,0 +1,62 @@
+@use "../utils/variables" as *;
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 4rem;
+	color: $text-brown;
+	background-color: $bg-darker;
+
+	&__contact-box,
+	&__link-box,
+	&__media-box {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.6rem;
+		// background-color: $bg-light;
+	}
+
+	&__box-title {
+		margin-bottom: 0.5rem;
+		font-size: 1.5rem;
+	}
+
+	&__logo {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.footer {
+		&__contact-box,
+		&__link-box,
+		&__media-box {
+			align-items: start;
+			gap: 1rem;
+			font-size: 2rem;
+		}
+
+		&__logo {
+			font-size: 5rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.footer {
+		justify-content: space-evenly;
+
+		&__contact-box,
+		&__link-box,
+		&__media-box {
+			font-size: 2.2rem;
+		}
+		&__logo {
+			font-size: 6rem;
+		}
+	}
+}

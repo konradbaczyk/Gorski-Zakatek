@@ -1,0 +1,104 @@
+@use "../utils/variables" as *;
+@use "./navigation";
+
+.header {
+	position: relative;
+	height: 100svh;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("../src/images/cottage/interior/interior_1_big.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	// animation: zoom 60s 0.1s linear infinite;
+}
+
+.hero-section {
+	height: 100%;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	background-color: rgba(0, 0, 0, 0.6);
+
+	&__title,
+	&__text {
+		font-family: $lato-thin, sans-serif;
+	}
+
+	&__title {
+		font-size: 7rem;
+	}
+
+	&__text {
+		font-size: 3rem;
+	}
+}
+
+@keyframes zoom {
+	from {
+		background-size: 130%;
+	}
+
+	to {
+		background-size: 200%;
+	}
+}
+
+// MEDIA QUERIES
+@media (min-width: 576px) {
+	.hero-section {
+		&__title {
+			font-size: 9rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.hero-section {
+		&__title {
+			font-size: 11.3rem;
+		}
+
+		&__text {
+			font-size: 3.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.hero-section {
+		&__title {
+			font-size: 14rem;
+		}
+
+		&__text {
+			font-size: 4.5rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero-section {
+		&__title {
+			font-size: 16rem;
+		}
+
+		&__text {
+			font-size: 5.5rem;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.hero-section {
+		&__title {
+			font-size: 18rem;
+		}
+
+		&__text {
+			font-size: 6.5rem;
+		}
+	}
+}

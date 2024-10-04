@@ -1,0 +1,93 @@
+@use "../utils/variables" as *;
+
+.about-us {
+	&__cottage-content,
+	&__area-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__area-content {
+		margin-bottom: 4rem;
+	}
+
+	&__area-img {
+		position: relative;
+		align-self: flex-end;
+	}
+
+	&__cottage-content {
+		text-align: right;
+	}
+
+	&__cottage-img {
+		position: relative;
+		max-width: 550px;
+	}
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+	.about-us {
+		&__area-content {
+			margin-bottom: 6rem;
+		}
+
+		&__area-img {
+			max-width: 900px;
+		}
+
+		&__cottage-img {
+			max-width: 600px;
+		}
+	}
+}
+
+@media (min-width: 1100px) {
+	.about-us {
+		&__cottage-text {
+			position: absolute;
+			left: 100%;
+			bottom: 10%;
+			width: 65%;
+			margin-left: 4rem;
+			text-align: left;
+		}
+	}
+}
+
+// @media (min-width: 1400px) {
+// 	.about-us {
+// 		// &__area-text {
+// 		// 	position: absolute;
+// 		// 	right: 100%;
+// 		// 	bottom: 10%;
+// 		// 	width: 35%;
+// 		// 	margin-right: 4rem;
+// 		// 	font-size: 5rem;
+// 		// }
+// 	}
+// }
+
+@media (min-width: 1600px) {
+	.about-us {
+		&__area-content,
+		&__cottage-content {
+			justify-content: space-evenly;
+		}
+
+		&__area-content {
+			margin-bottom: 8rem;
+			flex-direction: row;
+		}
+
+		&__cottage-content {
+			flex-direction: row-reverse;
+		}
+	}
+}

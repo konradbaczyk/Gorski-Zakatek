@@ -1,0 +1,64 @@
+@use "../utils/variables" as *;
+
+.road-to-us {
+	background-color: $bg-light;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__content-img {
+		max-width: 700px;
+		max-height: 500px;
+		margin-bottom: 0.5rem;
+	}
+
+	&__text {
+		margin-bottom: 2.4rem;
+	}
+
+	&__enter-content,
+	&__road-content {
+		width: fit-content;
+	}
+}
+
+// MEDIA QUERIES
+@media (min-width: 576px) {
+	.road-to-us {
+		&__text {
+			margin-bottom: 4rem;
+		}
+
+		&__road-content {
+			align-self: end;
+		}
+	}
+}
+
+@media (min-width: 1450px) {
+	.road-to-us {
+		&__content {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		&__content-img {
+			max-width: 680px;
+		}
+
+		&__road-content {
+			margin-top: 20rem;
+		}
+	}
+}
+
+@media (min-width: 1800px) {
+	.road-to-us {
+		&__content-img {
+			max-width: 850px;
+			max-height: 550px;
+		}
+	}
+}

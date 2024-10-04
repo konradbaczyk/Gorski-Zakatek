@@ -1,0 +1,24 @@
+@use "./utils/resetCSS";
+@use "./utils/variables" as *;
+@use "./utils/common-classes";
+@use "./header/header";
+@use "./main/main";
+@use "./footer/footer";
+
+body {
+	color: $white;
+	overflow-x: hidden;
+}
+
+// MEDIA QUERIES
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

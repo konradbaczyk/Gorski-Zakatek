@@ -1,0 +1,62 @@
+// COLORS
+
+$white: #fff;
+$black: #000;
+
+$bg-light: #fff8e8;
+$bg-darker: #f7eed3;
+$text-green: #aab396;
+$text-brown: #674636;
+
+// FONTS
+$lato-thin: "latohairline";
+$lato-light: "latolight";
+$lato-regular: "latoregular";
+$lato-bold: "latobold";
+
+$logo-font: "great_vibesregular";
+
+@font-face {
+	font-family: "latohairline";
+	src: url("../src/fonts/lato-thin-webfont.woff2") format("woff2"),
+		url("../src/fonts/lato-thin-webfont.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "latolight";
+	src: url("../src/fonts/lato-light-webfont.woff2") format("woff2"),
+		url("../src/fonts/lato-light-webfont.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "latoregular";
+	src: url("../src/fonts/lato-regular-webfont.woff2") format("woff2"),
+		url("../src/fonts/lato-regular-webfont.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "latobold";
+	src: url("../src/fonts/lato-bold-webfont.woff2") format("woff2"),
+		url("../src/fonts/lato-bold-webfont.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+// LOGO FONT
+@font-face {
+	font-family: "great_vibesregular";
+	src: url("../src/fonts/greatvibes-regular-webfont.woff2") format("woff2"),
+		url("../src/fonts/greatvibes-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}

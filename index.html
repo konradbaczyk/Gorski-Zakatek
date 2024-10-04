@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<title>Górski Zakątek</title>
+		<script type="module" src="./src/js/script.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="navbar">
+				<nav class="navigation wrapper">
+					<a href="#" id="logo" class="navigation__logo logo">
+						Górski Zakątek
+					</a>
+
+					<button
+						class="navigation__menu-btn"
+						id="btn-toggle-menu"
+						type="button"></button>
+
+					<ul class="navigation__menu" id="menu">
+						<li class="navigation__menu-item">
+							<a href="#" class="navigation__menu-link">Zarezerwuj</a>
+						</li>
+						<li class="navigation__menu-item">
+							<a href="#" class="navigation__menu-link">Cennik</a>
+						</li>
+						<li class="navigation__menu-item">
+							<a href="#" class="navigation__menu-link">Obejrzyj domek</a>
+						</li>
+						<li class="navigation__menu-item">
+							<a href="#" class="navigation__menu-link">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="hero-section">
+				<div class="wrapper">
+					<h1 class="hero-section__title">Odnajdź spokój</h1>
+					<p class="hero-section__text">
+						Podaruj sobie odrobinę luksusu pośród przyrody.
+					</p>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="about-us section">
+				<div class="wrapper">
+					<div class="about-us__content">
+						<div class="about-us__area-content">
+							<h2 class="about-us__title section-title">
+								Wygodny odpoczynek na łonie natury...
+							</h2>
+
+							<div class="about-us__area-img">
+								<img
+									src="./src/images/area/area_small.jpg"
+									alt="Jezioro otoczone lasem, w tle wysokie góry."
+									id="area-lake-img" />
+								<!-- <p class="about-us__area-text section-text">
+									Okolica sprzyja leśnym oraz górskim wędrówkom
+								</p> -->
+							</div>
+						</div>
+
+						<div class="about-us__cottage-content">
+							<h2 class="about-us__title section-title">
+								... a także relaks w dogodnych warunkach
+							</h2>
+
+							<div class="about-us__cottage-img">
+								<img
+									src="./src/images/cottage/interior/interior_3_small.jpg"
+									alt="Wnętrze domku, jasny dywan, kremowy fotel, antresola z drewnianą podłogą, aneks kuchenny."
+									id="cottage-interior-img" />
+								<p class="about-us__cottage-text section-text">
+									Nasz domek zapewnia komfortowe warunki wypoczynku <br />
+									<a href="#" class="link-text">-Zobacz domek</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="road-to-us section">
+				<div class="wrapper">
+					<h2 class="road-to-us__title section-title">Poczuj przyrodę</h2>
+
+					<div class="road-to-us__content">
+						<div class="road-to-us__enter-content">
+							<img
+								src="./src/images/area/enter_small.jpg"
+								alt="Drewniany most w środku lasu."
+								class="road-to-us__content-img"
+								id="enter-area-img" />
+							<p class="road-to-us__text section-text">
+								Już wjeżdzając na nasz teren czuć klimat lasu...
+							</p>
+						</div>
+
+						<div class="road-to-us__road-content">
+							<img
+								src="./src/images/area/road_small.jpg"
+								alt="Zdjęcie z drona, ujęcie prostopadłe z góry, droga z samochodami w środku lasu."
+								class="road-to-us__content-img"
+								id="road-img" />
+							<p class="road-to-us__text section-text">
+								... a jednocześnie łatwo do nas dojechać.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="map">
+				<!-- <iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.1271880590944!2d22.336029976793714!3d49.20764607606449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bfc3bbc70d041%3A0x337daf8a6dc8d488!2s38-607%20Cisna!5e1!3m2!1spl!2spl!4v1728068455187!5m2!1spl!2spl"
+					width="100%"
+					height="100%"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6198.962905721316!2d22.335646310035266!3d49.21302481954515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bfc22bbe9eb5d%3A0x3420ee32a125f2e4!2sCisna%20103A%2C%2038-607%20Cisna!5e0!3m2!1spl!2spl!4v1728069852633!5m2!1spl!2spl"
+					width="100%"
+					height="100%"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
+		</main>
+
+		<footer class="footer section section-text">
+			<div class="footer__logo-box">
+				<a href="#" id="logo" class="footer__logo logo"> Górski Zakątek </a>
+			</div>
+
+			<div class="footer__contact-box">
+				<h3 class="footer__box-title">Kontakt</h3>
+				<a href="#" class="footer__localization">Cisna 103A, 38-607 Cisna</a>
+				<a href="tel:111222333" class="footer__phone">+48 123 456 789</a>
+				<a href="mailto:kontakt@gorskizakatek.pl" class="footer__email">
+					kontakt@gorskizakatek.pl
+				</a>
+			</div>
+
+			<div class="footer__link-box">
+				<h3 class="footer__box-title">Strony</h3>
+				<a href="#" class="footer__link">Zarezerwuj</a>
+				<a href="#" class="footer__link">Cennik</a>
+				<a href="#" class="footer__link">Obejrzyj domek</a>
+				<a href="#" class="footer__link">Kontakt</a>
+			</div>
+
+			<div class="footer__media-box">
+				<h3 class="footer__box-title">Social media</h3>
+				<a href="#" class="footer__social-link">Instagram</a>
+				<a href="#" class="footer__social-link">Facebook</a>
+			</div>
+		</footer>
+	</body>
+</html>
