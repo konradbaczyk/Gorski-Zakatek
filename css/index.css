@@ -161,6 +161,26 @@ textarea {
     width: 50%;
   }
 }
+@keyframes zoom {
+  from {
+    background-size: 130%;
+  }
+  to {
+    background-size: 200%;
+  }
+}
+@keyframes navbarAnimation {
+  from {
+    background-color: rgba(103, 70, 54, 0);
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
+  to {
+    background-color: rgba(103, 70, 54, 0.8);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+}
 .no-scroll {
   overflow: hidden;
 }
@@ -265,9 +285,6 @@ textarea {
     display: flex;
     align-items: center;
   }
-  .navigation__menu-item:last-of-type :first-child {
-    padding-right: 0;
-  }
   .navigation__menu-link {
     font-size: 2rem;
     transition: color 0.3s, background-color 0.3s;
@@ -297,18 +314,6 @@ textarea {
   }
   .navigation__logo {
     font-size: 5rem;
-  }
-}
-@keyframes navbarAnimation {
-  from {
-    background-color: rgba(103, 70, 54, 0);
-    -webkit-backdrop-filter: blur(0);
-            backdrop-filter: blur(0);
-  }
-  to {
-    background-color: rgba(103, 70, 54, 0.8);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
   }
 }
 .header {
@@ -341,14 +346,6 @@ textarea {
   font-size: 2.4rem;
 }
 
-@keyframes zoom {
-  from {
-    background-size: 130%;
-  }
-  to {
-    background-size: 200%;
-  }
-}
 @media (min-width: 576px) {
   .hero-section__title {
     font-size: 9rem;
