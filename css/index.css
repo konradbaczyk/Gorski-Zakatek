@@ -265,6 +265,9 @@ textarea {
     display: flex;
     align-items: center;
   }
+  .navigation__menu-item:last-of-type :first-child {
+    padding-right: 0;
+  }
   .navigation__menu-link {
     font-size: 2rem;
     transition: color 0.3s, background-color 0.3s;
@@ -275,9 +278,6 @@ textarea {
   }
   .navigation__menu-link:focus-visible {
     outline: 1px solid #674636;
-  }
-  .navigation__menu-link:last-child {
-    padding-right: 0;
   }
   .navigation__logo:focus-visible {
     outline: 1px solid #fff8e8;
