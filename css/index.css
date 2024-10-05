@@ -164,9 +164,6 @@ textarea {
   position: fixed;
   width: 100%;
   padding: 0 2rem;
-  background-color: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(0);
-          backdrop-filter: blur(0);
   animation: forwards navbarAnimation;
   animation-timeline: view(0 100%);
   z-index: 100;
@@ -203,7 +200,7 @@ textarea {
   gap: 2em;
   transform: scaleX(0);
   transform-origin: right;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(103, 70, 54);
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
 }
@@ -293,12 +290,12 @@ textarea {
 }
 @keyframes navbarAnimation {
   from {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(103, 70, 54, 0);
     -webkit-backdrop-filter: blur(0);
             backdrop-filter: blur(0);
   }
   to {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(103, 70, 54, 0.8);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
   }
@@ -516,13 +513,18 @@ textarea {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 4rem;
   color: #674636;
   background-color: #f7eed3;
 }
+.footer__logo {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 4rem;
+}
 .footer__contact-box, .footer__link-box, .footer__media-box {
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -532,14 +534,35 @@ textarea {
 .footer__box-title {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
+  opacity: 0.5;
 }
-.footer__logo {
-  font-size: 4rem;
+.footer a {
+  display: flex;
+  align-items: center;
+}
+.footer__icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 1rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
+  .footer__boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
   .footer__contact-box, .footer__link-box, .footer__media-box {
     align-items: start;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .footer__contact-box, .footer__link-box, .footer__media-box {
     gap: 1rem;
     font-size: 2rem;
   }
@@ -548,14 +571,11 @@ textarea {
   }
 }
 @media (min-width: 1200px) {
-  .footer {
-    justify-content: space-evenly;
-  }
-  .footer__contact-box, .footer__link-box, .footer__media-box {
-    font-size: 2.2rem;
-  }
   .footer__logo {
     font-size: 6rem;
+  }
+  .footer__boxes {
+    width: 50%;
   }
 }
 body {

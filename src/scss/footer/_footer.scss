@@ -3,30 +3,65 @@
 .footer {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	// flex-direction: column;
+	justify-content: center;
 	gap: 4rem;
 	color: $text-brown;
 	background-color: $bg-darker;
 
+	&__logo {
+		width: fit-content;
+		font-size: 4rem;
+	}
+
 	&__contact-box,
 	&__link-box,
 	&__media-box {
-		padding: 1rem;
+		padding: 0 1rem 1rem 1rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 0.5rem;
 		font-size: 1.6rem;
-		// background-color: $bg-light;
 	}
 
 	&__box-title {
 		margin-bottom: 0.5rem;
 		font-size: 1.5rem;
+		opacity: 0.5;
 	}
 
-	&__logo {
-		font-size: 4rem;
+	a {
+		display: flex;
+		align-items: center;
+	}
+
+	&__icon {
+		height: 24px;
+		width: 24px;
+		margin-right: 1rem;
+	}
+}
+
+@media (min-width: 576px) {
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+			gap: 3rem;
+		}
+
+		&__contact-box,
+		&__link-box,
+		&__media-box {
+			align-items: start;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.footer {
+		justify-content: space-between;
 	}
 }
 
@@ -35,7 +70,6 @@
 		&__contact-box,
 		&__link-box,
 		&__media-box {
-			align-items: start;
 			gap: 1rem;
 			font-size: 2rem;
 		}
@@ -48,15 +82,12 @@
 
 @media (min-width: 1200px) {
 	.footer {
-		justify-content: space-evenly;
-
-		&__contact-box,
-		&__link-box,
-		&__media-box {
-			font-size: 2.2rem;
-		}
 		&__logo {
 			font-size: 6rem;
+		}
+
+		&__boxes {
+			width: 50%;
 		}
 	}
 }
