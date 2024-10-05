@@ -129,6 +129,10 @@
 			&:focus-visible {
 				outline: 1px solid $text-brown;
 			}
+
+			&:last-child {
+				padding-right: 0;
+			}
 		}
 
 		&__logo {
@@ -150,6 +154,10 @@
 }
 
 @media (min-width: 1400px) {
+	.navbar {
+		padding: 0 4rem;
+	}
+
 	.navigation {
 		&__logo {
 			font-size: 5rem;

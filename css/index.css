@@ -151,6 +151,11 @@ textarea {
     font-size: 10rem;
   }
 }
+@media (min-width: 1400px) {
+  .section {
+    padding: 9rem 4rem;
+  }
+}
 @media (min-width: 1600px) {
   .section-title {
     width: 50%;
@@ -271,6 +276,9 @@ textarea {
   .navigation__menu-link:focus-visible {
     outline: 1px solid #674636;
   }
+  .navigation__menu-link:last-child {
+    padding-right: 0;
+  }
   .navigation__logo:focus-visible {
     outline: 1px solid #fff8e8;
   }
@@ -284,6 +292,9 @@ textarea {
   }
 }
 @media (min-width: 1400px) {
+  .navbar {
+    padding: 0 4rem;
+  }
   .navigation__logo {
     font-size: 5rem;
   }
@@ -368,6 +379,9 @@ textarea {
   }
 }
 @media (min-width: 1400px) {
+  .hero-section {
+    padding: 2rem 4rem;
+  }
   .hero-section__title {
     font-size: 18rem;
   }
@@ -427,7 +441,7 @@ textarea {
 @media (min-width: 1450px) {
   .road-to-us__content {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .road-to-us__content-img {
     max-width: 680px;
@@ -521,6 +535,7 @@ textarea {
 .footer__logo {
   width: -moz-fit-content;
   width: fit-content;
+  padding: 1rem;
   font-size: 4rem;
 }
 .footer__contact-box, .footer__link-box, .footer__media-box {
@@ -559,6 +574,9 @@ textarea {
 @media (min-width: 768px) {
   .footer {
     justify-content: space-between;
+  }
+  .footer__logo {
+    padding-left: 0;
   }
 }
 @media (min-width: 992px) {
