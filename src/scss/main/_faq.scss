@@ -9,17 +9,6 @@
 		color: $bg-light;
 	}
 
-	&__group {
-		display: grid;
-		&:nth-child(2) {
-			justify-content: center;
-		}
-
-		&:nth-child(3) {
-			justify-content: end;
-		}
-	}
-
 	&__question-boxes {
 		display: grid;
 		justify-content: center;
@@ -31,7 +20,7 @@
 		margin-bottom: 2rem;
 		padding-bottom: 2rem;
 		display: grid;
-		grid-template-columns: 90% 10%;
+		grid-template-columns: 100% 0%;
 		border-bottom: 1px solid $bg-light;
 
 		input[type="checkbox"] {
@@ -40,12 +29,14 @@
 	}
 
 	&__box-heading {
+		padding: 1.5rem 0;
 		align-self: center;
 		font-family: $lato-thin;
 		font-size: 1.6rem;
+		transition: color 0.3s;
 
 		&:hover {
-			color: $bg-darker;
+			color: $black;
 			cursor: pointer;
 		}
 	}
@@ -53,9 +44,9 @@
 	&__box-button {
 		justify-self: end;
 		align-self: center;
-		width: 3rem;
-		height: 3rem;
-		background-color: green;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
 		background-repeat: no-repeat;
 		background-size: cover;
 
@@ -63,18 +54,12 @@
 			cursor: pointer;
 		}
 
-		&:checked {
-			background-color: red;
-		}
-
 		&:checked ~ div {
-			padding-top: 2rem;
 			grid-template-rows: 1fr;
 		}
 	}
 
 	&__box-text {
-		padding: 0;
 		font-size: 1.4rem;
 		line-height: 130%;
 		color: $bg-light;
@@ -103,9 +88,13 @@
 
 @media (min-width: 1720px) {
 	.faq {
+		&__question-box {
+			max-width: 100%;
+		}
+
 		&__question-boxes {
 			grid-template-columns: 1fr 1fr 1fr;
-			column-gap: 4rem;
+			column-gap: 6rem;
 		}
 	}
 }

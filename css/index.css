@@ -92,7 +92,34 @@ textarea {
 }
 .cta-btn:hover {
   color: #000;
-  background-color: #aab396;
+  background-color: #cee793;
+}
+
+.cta-text {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "latobold", sans-serif;
+}
+.cta-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(50%);
+  height: 2px;
+  width: 20px;
+  margin-left: 10px;
+  background-color: #674636;
+}
+
+.cta-text,
+.link-text {
+  transition: color 0.3s;
+}
+.cta-text:hover,
+.link-text:hover {
+  color: #000;
 }
 
 .section {
@@ -107,7 +134,7 @@ textarea {
 }
 
 .section-text,
-.link-text {
+.cta-text {
   font-size: 2rem;
   color: #674636;
 }
@@ -119,24 +146,6 @@ textarea {
 
 .section-text {
   line-height: 130%;
-}
-
-.link-text {
-  position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-family: "latobold", sans-serif;
-}
-.link-text::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translateY(50%);
-  height: 2px;
-  width: 20px;
-  margin-left: 10px;
-  background-color: #674636;
 }
 
 .logo {
@@ -260,11 +269,11 @@ textarea {
 }
 .navigation__menu-link:hover, .navigation__menu-link:focus {
   color: #674636;
-  background-color: #fff8e8;
+  background-color: #f7eed3;
 }
 .navigation__menu-link--cta-btn:hover {
   color: #000;
-  background-color: #aab396;
+  background-color: #cee793;
 }
 .navigation__logo {
   padding: 1rem 1rem 1rem 0;
@@ -545,15 +554,6 @@ textarea {
 .faq__heading {
   color: #fff8e8;
 }
-.faq__group {
-  display: grid;
-}
-.faq__group:nth-child(2) {
-  justify-content: center;
-}
-.faq__group:nth-child(3) {
-  justify-content: end;
-}
 .faq__question-boxes {
   display: grid;
   justify-content: center;
@@ -564,7 +564,7 @@ textarea {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
   display: grid;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 100% 0%;
   border-bottom: 1px solid #fff8e8;
 }
 .faq__question-box input[type=checkbox] {
@@ -573,35 +573,32 @@ textarea {
           appearance: none;
 }
 .faq__box-heading {
+  padding: 1.5rem 0;
   align-self: center;
   font-family: "latohairline";
   font-size: 1.6rem;
+  transition: color 0.3s;
 }
 .faq__box-heading:hover {
-  color: #f7eed3;
+  color: #000;
   cursor: pointer;
 }
 .faq__box-button {
   justify-self: end;
   align-self: center;
-  width: 3rem;
-  height: 3rem;
-  background-color: green;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .faq__box-button:hover {
   cursor: pointer;
 }
-.faq__box-button:checked {
-  background-color: red;
-}
 .faq__box-button:checked ~ div {
-  padding-top: 2rem;
   grid-template-rows: 1fr;
 }
 .faq__box-text {
-  padding: 0;
   font-size: 1.4rem;
   line-height: 130%;
   color: #fff8e8;
@@ -623,10 +620,13 @@ textarea {
   }
 }
 @media (min-width: 1720px) {
+  .faq__question-box {
+    max-width: 100%;
+  }
   .faq__question-boxes {
     grid-template-columns: 1fr 1fr 1fr;
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
   }
 }
 .footer {

@@ -19,33 +19,7 @@
 	}
 }
 
-.section {
-	padding: 6rem 2rem 4rem;
-}
-
-.section-title {
-	margin-bottom: 4rem;
-	font-family: $lato-thin, sans-serif;
-	font-size: 5rem;
-	color: $text-brown;
-}
-
-.section-text,
-.link-text {
-	font-size: 2rem;
-	color: $text-brown;
-}
-
-.text-content,
-.section-text {
-	font-family: $lato-light;
-}
-
-.section-text {
-	line-height: 130%;
-}
-
-.link-text {
+.cta-text {
 	position: relative;
 	width: fit-content;
 	font-family: $lato-bold, sans-serif;
@@ -61,6 +35,41 @@
 		margin-left: 10px;
 		background-color: $text-brown;
 	}
+}
+
+.cta-text,
+.link-text {
+	transition: color 0.3s;
+
+	&:hover {
+		color: $black;
+	}
+}
+
+.section {
+	padding: 6rem 2rem 4rem;
+}
+
+.section-title {
+	margin-bottom: 4rem;
+	font-family: $lato-thin, sans-serif;
+	font-size: 5rem;
+	color: $text-brown;
+}
+
+.section-text,
+.cta-text {
+	font-size: 2rem;
+	color: $text-brown;
+}
+
+.text-content,
+.section-text {
+	font-family: $lato-light;
+}
+
+.section-text {
+	line-height: 130%;
 }
 
 .logo {
