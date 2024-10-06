@@ -83,6 +83,18 @@ textarea {
   max-width: 2000px;
 }
 
+.cta-btn {
+  padding: 1rem;
+  font-family: "latobold";
+  color: #674636;
+  background-color: #fff8e8;
+  transition: color 0.5s, background-color 0.5s;
+}
+.cta-btn:hover {
+  color: #000;
+  background-color: #aab396;
+}
+
 .section {
   padding: 6rem 2rem 4rem;
 }
@@ -222,7 +234,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 2em;
+  gap: 2.5rem;
   transform: scaleX(0);
   transform-origin: right;
   background-color: rgb(103, 70, 54);
@@ -242,8 +254,17 @@ textarea {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .navigation__menu-link {
-  padding: 0.5em;
+  padding: 1rem;
   font-size: 2.2rem;
+  transition: color 0.5s, background-color 0.5s;
+}
+.navigation__menu-link:hover, .navigation__menu-link:focus {
+  color: #674636;
+  background-color: #fff8e8;
+}
+.navigation__menu-link--cta-btn:hover {
+  color: #000;
+  background-color: #aab396;
 }
 .navigation__logo {
   padding: 1rem 1rem 1rem 0;
@@ -287,11 +308,6 @@ textarea {
   }
   .navigation__menu-link {
     font-size: 2rem;
-    transition: color 0.3s, background-color 0.3s;
-  }
-  .navigation__menu-link:hover, .navigation__menu-link:focus {
-    color: #674636;
-    background-color: #fff8e8;
   }
   .navigation__menu-link:focus-visible {
     outline: 1px solid #674636;

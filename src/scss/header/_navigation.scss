@@ -43,7 +43,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: end;
-		gap: 2em;
+		gap: 2.5rem;
 		transform: scaleX(0);
 		transform-origin: right; //left/right;
 		background-color: rgba(103, 70, 54, 1);
@@ -66,8 +66,20 @@
 	}
 
 	&__menu-link {
-		padding: 0.5em;
+		padding: 1rem;
 		font-size: 2.2rem;
+		transition: color 0.5s, background-color 0.5s;
+
+		&:hover,
+		&:focus {
+			color: $text-brown;
+			background-color: $bg-light;
+		}
+
+		&--cta-btn:hover {
+			color: $black;
+			background-color: $text-green;
+		}
 	}
 
 	&__logo {
@@ -115,23 +127,10 @@
 			width: fit-content;
 			display: flex;
 			align-items: center;
-
-			// &:last-of-type {
-			// 	:first-child {
-			// 		padding-right: 0;
-			// 	}
-			// }
 		}
 
 		&__menu-link {
 			font-size: 2rem;
-			transition: color 0.3s, background-color 0.3s;
-
-			&:hover,
-			&:focus {
-				color: $text-brown;
-				background-color: $bg-light;
-			}
 
 			&:focus-visible {
 				outline: 1px solid $text-brown;
