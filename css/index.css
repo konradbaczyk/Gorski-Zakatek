@@ -529,6 +529,15 @@ textarea {
 .faq__heading {
   color: #fff8e8;
 }
+.faq__group {
+  display: grid;
+}
+.faq__group:nth-child(2) {
+  justify-content: center;
+}
+.faq__group:nth-child(3) {
+  justify-content: end;
+}
 .faq__question-boxes {
   display: grid;
   justify-content: center;
@@ -600,8 +609,8 @@ textarea {
 @media (min-width: 1720px) {
   .faq__question-boxes {
     grid-template-columns: 1fr 1fr 1fr;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
 }
 .footer {
@@ -673,7 +682,7 @@ textarea {
     font-size: 6rem;
   }
   .footer__boxes {
-    width: 50%;
+    width: 60%;
   }
 }
 body {

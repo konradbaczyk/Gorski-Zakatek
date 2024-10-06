@@ -9,6 +9,17 @@
 		color: $bg-light;
 	}
 
+	&__group {
+		display: grid;
+		&:nth-child(2) {
+			justify-content: center;
+		}
+
+		&:nth-child(3) {
+			justify-content: end;
+		}
+	}
+
 	&__question-boxes {
 		display: grid;
 		justify-content: center;
@@ -90,22 +101,11 @@
 	}
 }
 
-@media (min-width: 768px) {
-	// .faq {
-	// 	&__question-box {
-	// 		// max-width: 50%;
-	// 	}
-	// }
-}
-
-@media (min-width: 992px) {
-}
-
 @media (min-width: 1720px) {
 	.faq {
 		&__question-boxes {
 			grid-template-columns: 1fr 1fr 1fr;
-			column-gap: 2rem;
+			column-gap: 4rem;
 		}
 	}
 }
