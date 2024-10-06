@@ -1,0 +1,111 @@
+@use "../utils/variables" as *;
+
+.faq {
+	font-family: $lato-light;
+	color: $bg-light;
+	background-color: $text-brown;
+
+	&__heading {
+		color: $bg-light;
+	}
+
+	&__question-boxes {
+		display: grid;
+		justify-content: center;
+	}
+
+	&__question-box {
+		position: relative;
+		max-width: 550px;
+		margin-bottom: 2rem;
+		padding-bottom: 2rem;
+		display: grid;
+		grid-template-columns: 90% 10%;
+		border-bottom: 1px solid $bg-light;
+
+		input[type="checkbox"] {
+			appearance: none;
+		}
+	}
+
+	&__box-heading {
+		align-self: center;
+		font-family: $lato-thin;
+		font-size: 1.6rem;
+
+		&:hover {
+			color: $bg-darker;
+			cursor: pointer;
+		}
+	}
+
+	&__box-button {
+		justify-self: end;
+		align-self: center;
+		width: 3rem;
+		height: 3rem;
+		background-color: green;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:checked {
+			background-color: red;
+		}
+
+		&:checked ~ div {
+			padding-top: 2rem;
+			grid-template-rows: 1fr;
+		}
+	}
+
+	&__box-text {
+		padding: 0;
+		font-size: 1.4rem;
+		line-height: 130%;
+		color: $bg-light;
+		grid-column: 1 / 3;
+		display: grid;
+		grid-template-rows: 0fr;
+		transition: grid-template-rows 0.3s;
+
+		p {
+			overflow: hidden;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.faq {
+		&__box-heading {
+			font-size: 1.8rem;
+		}
+
+		&__box-text {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	// .faq {
+	// 	&__question-box {
+	// 		// max-width: 50%;
+	// 	}
+	// }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1720px) {
+	.faq {
+		&__question-boxes {
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 2rem;
+		}
+	}
+}
