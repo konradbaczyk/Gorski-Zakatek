@@ -431,10 +431,33 @@ body {
     padding: 12rem 4rem 4rem;
   }
 }
-.gallery {
+.gallery-section {
   background-color: #fff8e8;
 }
 
+.gallery {
+  -moz-columns: 300px;
+       columns: 300px;
+}
+
+@media (min-width: 576px) {
+  .gallery {
+    -moz-columns: 200px;
+         columns: 200px;
+  }
+}
+@media (min-width: 870px) {
+  .gallery {
+    -moz-columns: 300px;
+         columns: 300px;
+  }
+}
+@media (min-width: 1270px) {
+  .gallery {
+    -moz-columns: 3 400px;
+         columns: 3 400px;
+  }
+}
 .footer {
   display: flex;
   flex-wrap: wrap;

@@ -1,6 +1,28 @@
 @use "../utils/variables" as *;
 @use "../utils/animations" as *;
 
-.gallery {
+.gallery-section {
 	background-color: $bg-light;
+}
+
+.gallery {
+	columns: 300px;
+}
+
+@media (min-width: 576px) {
+	.gallery {
+		columns: 200px;
+	}
+}
+
+@media (min-width: 870px) {
+	.gallery {
+		columns: 300px;
+	}
+}
+
+@media (min-width: 1270px) {
+	.gallery {
+		columns: 3 400px;
+	}
 }
