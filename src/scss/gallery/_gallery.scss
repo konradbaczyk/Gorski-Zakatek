@@ -1,1 +1,6 @@
-@use "./header";
+@use "../utils/variables" as *;
+@use "../utils/animations" as *;
+
+.gallery {
+	background-color: $bg-light;
+}

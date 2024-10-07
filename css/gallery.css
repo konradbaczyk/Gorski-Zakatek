@@ -196,11 +196,6 @@ body {
   }
 }
 @keyframes navbarAnimation {
-  from {
-    background-color: rgba(103, 70, 54, 0);
-    -webkit-backdrop-filter: blur(0);
-            backdrop-filter: blur(0);
-  }
   to {
     background-color: rgba(103, 70, 54, 0.8);
     -webkit-backdrop-filter: blur(5px);
@@ -225,7 +220,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "latolight", sans-serif;
+  font-family: "latoregular", sans-serif;
   z-index: 100;
 }
 .navigation__menu-btn {
@@ -346,8 +341,98 @@ body {
     font-size: 5rem;
   }
 }
+.navbar {
+  color: #fff;
+  background-color: #674636;
+}
+
 .header {
-  height: 100svh;
+  min-height: 100svh;
+}
+
+.hero-section {
+  padding: 7rem 2rem 4rem;
+}
+.hero-section__title {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+.hero-section__header-img, .hero-section__text, .hero-section__surface, .hero-section__facilities {
+  margin-bottom: 2rem;
+}
+.hero-section__header-img {
+  max-width: 500px;
+}
+.hero-section__info-box {
+  max-width: 520px;
+}
+.hero-section__data-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 12rem;
+  }
+  .hero-section__title {
+    margin-bottom: 3rem;
+  }
+  .hero-section__content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .hero-section__info-box {
+    width: 45%;
+    max-width: 300px;
+  }
+  .hero-section__header-img {
+    max-width: 400px;
+    margin-bottom: 0;
+  }
+  .hero-section__data-title {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .hero-section__info-box {
+    min-width: 520px;
+  }
+  .hero-section__header-img {
+    max-width: 550px;
+    width: 45%;
+  }
+}
+@media (min-width: 1300px) {
+  .hero-section__title {
+    position: absolute;
+  }
+  .hero-section__info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .hero-section__cottage-data {
+    margin-top: 4rem;
+  }
+  .hero-section__surface, .hero-section__facilities {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-section__surface-info, .hero-section__facilities-items {
+    width: 50%;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-section {
+    padding: 12rem 4rem 4rem;
+  }
+}
+.gallery {
+  background-color: #fff8e8;
 }
 
 .footer {

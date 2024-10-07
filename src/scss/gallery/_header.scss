@@ -1,6 +1,122 @@
 @use "../utils/variables" as *;
 @use "../utils/animations" as *;
 
+.navbar {
+	color: $white;
+	background-color: $text-brown;
+}
+
 .header {
-	height: 100svh;
+	min-height: 100svh;
+}
+
+.hero-section {
+	padding: 7rem 2rem 4rem;
+
+	&__title {
+		width: fit-content;
+		margin-bottom: 2rem;
+	}
+
+	&__header-img,
+	&__text,
+	&__surface,
+	&__facilities {
+		margin-bottom: 2rem;
+	}
+
+	&__header-img {
+		max-width: 500px;
+	}
+
+	&__info-box {
+		max-width: 520px;
+	}
+
+	&__data-title {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+		opacity: 0.5;
+	}
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+	.hero-section {
+		padding-top: 12rem;
+
+		&__title {
+			margin-bottom: 3rem;
+		}
+
+		&__content {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+
+		&__info-box {
+			width: 45%;
+			max-width: 300px;
+		}
+
+		&__header-img {
+			max-width: 400px;
+			margin-bottom: 0;
+		}
+
+		&__data-title {
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.hero-section {
+		&__info-box {
+			min-width: 520px;
+		}
+
+		&__header-img {
+			max-width: 550px;
+			width: 45%;
+		}
+	}
+}
+
+@media (min-width: 1300px) {
+	.hero-section {
+		&__title {
+			position: absolute;
+		}
+
+		&__info-box {
+			display: flex;
+			flex-direction: column;
+			justify-content: end;
+		}
+
+		&__cottage-data {
+			margin-top: 4rem;
+		}
+
+		&__surface,
+		&__facilities {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__surface-info,
+		&__facilities-items {
+			width: 50%;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.hero-section {
+		padding: 12rem 4rem 4rem;
+	}
 }

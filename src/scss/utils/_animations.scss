@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 // HEADER
 @keyframes zoom {
 	from {
@@ -10,11 +12,6 @@
 }
 
 @keyframes navbarAnimation {
-	from {
-		background-color: rgba(103, 70, 54, 0);
-		backdrop-filter: blur(0);
-	}
-
 	to {
 		background-color: rgba(103, 70, 54, 0.8);
 		backdrop-filter: blur(5px);
