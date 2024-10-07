@@ -5,11 +5,6 @@
 @use "./main/main";
 @use "./footer/footer";
 
-body {
-	color: $white;
-	overflow-x: hidden;
-}
-
 // MEDIA QUERIES
 @media (min-width: 576px) {
 }
