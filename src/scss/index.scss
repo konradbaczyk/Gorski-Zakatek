@@ -1,7 +1,7 @@
 @use "./utils/resetCSS";
-@use "./utils/variables" as *;
+@use "./utils/variables";
 @use "./utils/common-classes";
-@use "./header/header";
+@use "./navbar/navigation";
 @use "./main/main";
 @use "./footer/footer";
 
