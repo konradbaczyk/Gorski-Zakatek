@@ -3,6 +3,34 @@
 
 .gallery-section {
 	background-color: $bg-light;
+
+	&__popup {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100svw;
+		height: 100svh;
+		background-color: rgba(0, 0, 0, 0.8);
+		z-index: 200;
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__popup-img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: auto;
+		max-width: 85svw;
+		height: auto;
+		max-height: 85svh;
+
+		z-index: 200;
+	}
 }
 
 .cta-section {
@@ -17,6 +45,10 @@
 
 .gallery {
 	columns: 2 100px;
+
+	&__thumbnail {
+		padding: 0.4rem 0;
+	}
 }
 
 @media (min-width: 576px) {

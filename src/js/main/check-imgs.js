@@ -8,18 +8,12 @@ export const checkImgSrc = () => {
 		enterImg.setAttribute("src", "./src/images/area/enter_big.jpg");
 		roadImg.setAttribute("src", "./src/images/area/road_big.jpg");
 		areaImg.setAttribute("src", "./src/images/area/area_big.jpg");
-		cottageInteriorImg.setAttribute(
-			"src",
-			"./src/images/cottage/interior/interior_3_big.jpg"
-		);
+		cottageInteriorImg.setAttribute("src", "./src/images/cottage/interior/interior_3_big.jpg");
 	} else {
 		enterImg.setAttribute("src", "./src/images/area/enter_small.jpg");
 		roadImg.setAttribute("src", "./src/images/area/road_small.jpg");
 		areaImg.setAttribute("src", "./src/images/area/area_small.jpg");
-		cottageInteriorImg.setAttribute(
-			"src",
-			"./src/images/cottage/interior/interior_3_small.jpg"
-		);
+		cottageInteriorImg.setAttribute("src", "./src/images/cottage/interior/interior_3_small.jpg");
 	}
 };
 

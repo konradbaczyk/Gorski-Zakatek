@@ -1,22 +1,8 @@
-const cottageInteriorGalleryImg = document.getElementById(
-	"cottage-interior-gallery-img"
-);
+import { handleMenu } from "./navigation/navigation.js";
+import { checkImgSrc } from "./gallery/check-imgs.js";
+import { handlePopup } from "./gallery/handle-popup.js";
+import { galleryImages } from "./gallery/check-imgs.js";
 
-const checkImgSrc = () => {
-	if (window.innerWidth >= 992) {
-		cottageInteriorGalleryImg.setAttribute(
-			"src",
-			"./src/images/cottage/interior/interior_2_big.jpg"
-		);
-	} else {
-		cottageInteriorGalleryImg.setAttribute(
-			"src",
-			"./src/images/cottage/interior/interior_2_small.jpg"
-		);
-	}
-};
-
-window.addEventListener("resize", () => {
-	checkImgSrc();
-});
+galleryImages.forEach((image) => image.addEventListener("click", handlePopup));
 checkImgSrc();
+handleMenu;
