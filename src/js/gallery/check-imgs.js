@@ -39,3 +39,4 @@ export const checkImgSrc = () => {
 window.addEventListener("resize", () => {
 	checkImgSrc();
 });
+checkImgSrc();
