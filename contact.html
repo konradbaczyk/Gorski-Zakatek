@@ -3,106 +3,151 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/contact.css" />
 		<title>Górski Zakątek - Kontakt</title>
 		<script type="module" src="./src/js/script.js" defer></script>
 	</head>
 	<body>
-		<div class="navbar">
-			<nav class="navigation wrapper">
-				<a href="./index.html" id="logo" class="navigation__logo logo">
-					Górski Zakątek
-				</a>
+		<header class="header">
+			<div class="navbar">
+				<nav class="navigation wrapper">
+					<a href="./index.html" id="logo" class="navigation__logo logo"> Górski Zakątek </a>
 
-				<button
-					class="navigation__menu-btn"
-					id="btn-toggle-menu"
-					type="button"></button>
+					<button class="navigation__menu-btn" id="btn-toggle-menu" type="button"></button>
 
-				<ul class="navigation__menu" id="menu">
-					<div class="navigation__menu-mobile-shadow"></div>
+					<ul class="navigation__menu" id="menu">
+						<div class="navigation__menu-mobile-shadow"></div>
 
-					<li class="navigation__menu-item">
-						<a href="./gallery.html" class="navigation__menu-link">
-							Obejrzyj domek
-						</a>
-					</li>
-					<li class="navigation__menu-item">
-						<a href="#" class="navigation__menu-link">Kontakt</a>
-					</li>
-					<li class="navigation__menu-item">
-						<a
-							href="./reservation.html"
-							class="navigation__menu-link navigation__menu-link--cta-btn cta-btn">
-							Zarezerwuj
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+						<li class="navigation__menu-item">
+							<a href="./gallery.html" class="navigation__menu-link"> Obejrzyj domek </a>
+						</li>
+						<li class="navigation__menu-item">
+							<a href="#" class="navigation__menu-link">Kontakt</a>
+						</li>
+						<li class="navigation__menu-item">
+							<a href="./reservation.html" class="navigation__menu-link navigation__menu-link--cta-btn cta-btn"> Zarezerwuj </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="hero-section">
+				<div class="wrapper">
+					<div class="contact-box">
+						<div class="info-box">
+							<h1 class="info-box__title section-title">Skontaktuj się</h1>
+						</div>
+
+						<form class="form text-content">
+							<label for="name" class="form__label">
+								<p>Imię <span>*</span></p>
+								<input type="text" name="name" class="form__input" id="input-name" required />
+							</label>
+
+							<label for="last-name" class="form__label">
+								<p>Nazwisko <span class="form__asterisk" aria-label="required">*</span></p>
+								<input type="text" name="last-name" class="form__input" id="input-last-name" required />
+							</label>
+
+							<label for="email" class="form__label">
+								<p>Email <span class="form__asterisk" aria-label="required">*</span></p>
+								<input type="text" name="email" class="form__input" id="input-email" required />
+							</label>
+
+							<fieldset class="form__fieldset-reservation">
+								<legend>Czy wiadomość dotyczy rezerwacji? <span class="form__asterisk" aria-label="required">*</span></legend>
+
+								<div class="form__fieldset-answers">
+									<label for="answer-yes" class="form__label">
+										<p>Tak</p>
+										<input type="radio" name="answer-yes" class="form__input" id="answer-yes" />
+									</label>
+
+									<label for="answer-no" class="form__label">
+										<p>Nie</p>
+										<input type="radio" name="answer-no" class="form__input" id="answer-no" />
+									</label>
+								</div>
+							</fieldset>
+
+							<div class="form__fieldset-date">
+								<p>Wybierz datę pobytu</p>
+
+								<label for="date-from">
+									<p>Od kiedy planujesz pobyt? <span class="form__asterisk" aria-label="required">*</span></p>
+									<input type="date" name="date-from" class="form__input" id="input-date-from" required />
+								</label>
+
+								<label for="date-to">
+									<p>Do kiedy planujesz pobyt? <span class="form__asterisk" aria-label="required">*</span></p>
+									<input type="date" name="date-to" class="form__input" id="input-date-to" required />
+								</label>
+							</div>
+
+							<label for="message">
+								<p>Wiadomość</p>
+								<textarea name="message" class="form__textarea" id="input-message"></textarea>
+							</label>
+
+							<button type="submit" class="form__button" id="btn-submit-form">Wyślij</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6198.962905721316!2d22.335646310035266!3d49.21302481954515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bfc22bbe9eb5d%3A0x3420ee32a125f2e4!2sCisna%20103A%2C%2038-607%20Cisna!5e0!3m2!1spl!2spl!4v1728069852633!5m2!1spl!2spl"
+					width="100%"
+					height="100%"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
+		</main>
 
 		<footer class="footer section">
 			<div class="wrapper">
 				<div class="footer section-text">
 					<div class="footer__logo-box">
-						<a href="./index.html" id="logo" class="footer__logo logo">
-							Górski Zakątek
-						</a>
+						<a href="./index.html" id="logo" class="footer__logo logo"> Górski Zakątek </a>
 					</div>
 
 					<div class="footer__boxes">
 						<div class="footer__contact-box">
 							<h3 class="footer__box-title">Kontakt</h3>
 							<a href="#" class="footer__localization link-text">
-								<img
-									src="./src/images/icons/icon-localization.svg"
-									alt=""
-									class="footer__icon" />
+								<img src="./src/images/icons/icon-localization.svg" alt="" class="footer__icon" />
 								Cisna 103A, 38-607 Cisna
 							</a>
 							<a href="tel:111222333" class="footer__phone link-text">
-								<img
-									src="./src/images/icons/icon-phone.svg"
-									alt=""
-									class="footer__icon" />
+								<img src="./src/images/icons/icon-phone.svg" alt="" class="footer__icon" />
 								+48 123 456 789
 							</a>
-							<a
-								href="mailto:kontakt@gorskizakatek.pl"
-								class="footer__email link-text">
-								<img
-									src="./src/images/icons/icon-mail.svg"
-									alt=""
-									class="footer__icon" />
+							<a href="mailto:kontakt@gorskizakatek.pl" class="footer__email link-text">
+								<img src="./src/images/icons/icon-mail.svg" alt="" class="footer__icon" />
 								kontakt@gorskizakatek.pl
 							</a>
 						</div>
 
 						<div class="footer__link-box">
 							<h3 class="footer__box-title">Strony</h3>
-							<a href="./reservation.html" class="footer__link cta-text">
-								Zarezerwuj
-							</a>
-							<a href="./gallery.html" class="footer__link link-text">
-								Obejrzyj domek
-							</a>
+							<a href="./reservation.html" class="footer__link cta-text"> Zarezerwuj </a>
+							<a href="./gallery.html" class="footer__link link-text"> Obejrzyj domek </a>
 							<a href="#" class="footer__link link-text"> Kontakt </a>
 						</div>
 
 						<div class="footer__media-box">
 							<h3 class="footer__box-title">Zaobserwuj nas!</h3>
 							<a href="#" class="footer__social-link link-text">
-								<img
-									src="./src/images/icons/icon-instagram.svg"
-									alt=""
-									class="footer__icon" />
+								<img src="./src/images/icons/icon-instagram.svg" alt="" class="footer__icon" />
 								Instagram
 							</a>
 							<a href="#" class="footer__social-link link-text">
-								<img
-									src="./src/images/icons/icon-facebook.svg"
-									alt=""
-									class="footer__icon" />
+								<img src="./src/images/icons/icon-facebook.svg" alt="" class="footer__icon" />
 								Facebook
 							</a>
 						</div>

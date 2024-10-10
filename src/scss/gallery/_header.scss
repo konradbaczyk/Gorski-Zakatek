@@ -6,13 +6,7 @@
 	background-color: $text-brown;
 }
 
-.header {
-	min-height: 100svh;
-}
-
 .hero-section {
-	padding: 7rem 2rem 4rem;
-
 	&__title {
 		width: fit-content;
 		margin-bottom: 2rem;
@@ -45,8 +39,6 @@
 
 @media (min-width: 768px) {
 	.hero-section {
-		padding-top: 12rem;
-
 		&__title {
 			margin-bottom: 3rem;
 		}
@@ -112,11 +104,5 @@
 		&__facilities-items {
 			width: 50%;
 		}
-	}
-}
-
-@media (min-width: 1400px) {
-	.hero-section {
-		padding: 12rem 4rem 4rem;
 	}
 }

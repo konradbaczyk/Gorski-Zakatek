@@ -51,6 +51,14 @@ body {
 	}
 }
 
+.header {
+	min-height: 100svh;
+}
+
+.hero-section {
+	padding: 7rem 2rem 4rem;
+}
+
 .section {
 	padding: 6rem 2rem 4rem;
 }
@@ -89,6 +97,10 @@ body {
 }
 
 @media (min-width: 768px) {
+	.hero-section {
+		padding-top: 12rem;
+	}
+
 	.section-title {
 		margin-bottom: 7rem;
 		font-size: 8rem;
@@ -107,6 +119,10 @@ body {
 }
 
 @media (min-width: 1400px) {
+	.hero-section {
+		padding: 12rem 4rem 4rem;
+	}
+
 	.section {
 		padding: 9rem 4rem;
 	}

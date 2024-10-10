@@ -1,0 +1,17 @@
+@use "../utils/variables" as *;
+@use "../utils/animations" as *;
+
+.navbar {
+	color: $white;
+	background-color: $text-brown;
+}
+
+.hero-section {
+	color: $text-brown;
+	background-color: $bg-darker;
+	height: 100svh;
+}
+
+.info-box {
+	background-color: $bg-light;
+}
