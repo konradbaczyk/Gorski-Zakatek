@@ -12,8 +12,10 @@ body {
 }
 
 .cta-btn {
+	display: block;
 	padding: 1rem;
 	font-family: $lato-bold;
+	font-size: 2rem;
 	color: $text-brown;
 	background-color: $bg-light;
 	transition: color 0.5s, background-color 0.5s;
@@ -94,6 +96,10 @@ body {
 	.section-title {
 		font-size: 7rem;
 	}
+
+	.cta-btn {
+		font-size: 2.4rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -116,6 +122,14 @@ body {
 		margin-bottom: 8rem;
 		font-size: 10rem;
 	}
+}
+
+@media (min-width: 1100px) {
+	.cta-btn {
+			padding: 2rem;
+			font-size: 2.8rem;
+		}
+	
 }
 
 @media (min-width: 1400px) {

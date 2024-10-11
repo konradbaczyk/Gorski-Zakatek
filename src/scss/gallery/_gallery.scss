@@ -68,10 +68,8 @@
 
 .cta-section {
 	&__cta-btn {
-		display: block;
 		width: fit-content;
 		margin: 4rem auto;
-		font-size: 2rem;
 		background-color: $bg-darker;
 	}
 }
@@ -98,8 +96,6 @@
 	.cta-section {
 		&__cta-btn {
 			margin: 6rem auto;
-			font-size: 2.4rem;
-			background-color: $bg-darker;
 		}
 	}
 
@@ -128,9 +124,6 @@
 	.cta-section {
 		&__cta-btn {
 			margin: 8rem auto;
-			padding: 2rem;
-			font-size: 2.8rem;
-			background-color: $bg-darker;
 		}
 	}
 }

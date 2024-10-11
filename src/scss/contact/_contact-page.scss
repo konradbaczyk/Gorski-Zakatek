@@ -9,9 +9,80 @@
 .hero-section {
 	color: $text-brown;
 	background-color: $bg-darker;
-	height: 100svh;
+	min-height: 100svh;
 }
 
 .info-box {
+	margin-bottom: 3rem;
+	padding: 2rem;
 	background-color: $bg-light;
+
+	&__title {
+		margin-bottom: 0.5rem;
+	}
+
+	&__address {
+		margin: 3rem 0;
+	}
+
+	&__contact {
+		font-family: $lato-regular, sans-serif;
+	}
+}
+
+.form {
+	width: 100%;
+
+	&__input,
+	&__textarea,
+	&__input-date,
+	&__fieldset-reservation {
+		margin-top: 0.5rem;
+		margin-bottom: 2rem;
+	}
+
+	&__input,
+	&__textarea {
+		width: 100%;
+
+		padding: 0.5rem;
+		font-size: 1.8rem;
+		color: $text-brown;
+		background-color: $bg-light;
+		border-bottom: 1px solid $text-brown;
+	}
+
+	&__textarea {
+		max-width: 100%;
+		min-width: 100%;
+		min-height: 8rem;
+	}
+
+	&__fieldset-reservation,
+	&__fieldset-date {
+		border: none;
+	}
+
+	&__fieldset-date {
+		margin-top: 0.5rem;
+	}
+
+	&__legend {
+		margin-bottom: 0.5rem;
+	}
+
+	&__answers {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	&__label-radio {
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	&__button {
+		margin: 0 auto;
+	}
 }

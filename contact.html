@@ -36,60 +36,84 @@
 					<div class="contact-box">
 						<div class="info-box">
 							<h1 class="info-box__title section-title">Skontaktuj się</h1>
+							<p class="info-box__text section-text">Chętnie odpowiemy na Twoje pytania</p>
+
+							<div class="info-box__address section-text">
+								<p>Górski Zakątek</p>
+								<p>Cisna 103A</p>
+								<p>38607 Cisna</p>
+							</div>
+
+							<div class="info-box__contact section-text">
+								<a href="tel:+48123456789" class="link-text">+48 123 456 789</a>
+								<a href="mailto:kontakt@gorskizakatek.pl" class="link-text">kontakt@gorskizakatek.pl</a>
+							</div>
 						</div>
 
-						<form class="form text-content">
-							<label for="name" class="form__label">
-								<p>Imię <span>*</span></p>
+						<form class="form text-content section-text">
+							<label for="name">
+								Imię<span>*</span>
+								<span class="form__error error">Uzupełnij pole</span>
 								<input type="text" name="name" class="form__input" id="input-name" required />
 							</label>
 
-							<label for="last-name" class="form__label">
-								<p>Nazwisko <span class="form__asterisk" aria-label="required">*</span></p>
+							<label for="last-name">
+								Nazwisko<span class="form__asterisk" aria-label="required">*</span>
+								<span class="form__error error">Uzupełnij pole</span>
 								<input type="text" name="last-name" class="form__input" id="input-last-name" required />
 							</label>
 
-							<label for="email" class="form__label">
-								<p>Email <span class="form__asterisk" aria-label="required">*</span></p>
+							<label for="email">
+								Email<span class="form__asterisk" aria-label="required">*</span>
+								<span class="form__error error">Uzupełnij pole</span>
 								<input type="text" name="email" class="form__input" id="input-email" required />
 							</label>
 
 							<fieldset class="form__fieldset-reservation">
-								<legend>Czy wiadomość dotyczy rezerwacji? <span class="form__asterisk" aria-label="required">*</span></legend>
+								<legend class="form__legend">
+									Czy wiadomość dotyczy rezerwacji?<span class="form__asterisk" aria-label="required">*</span>
+									<span class="form__error error">Uzupełnij odpowiedź</span>
+								</legend>
 
-								<div class="form__fieldset-answers">
-									<label for="answer-yes" class="form__label">
+								<div class="form__answers">
+									<label for="answer-yes" class="form__label-radio">
 										<p>Tak</p>
-										<input type="radio" name="answer-yes" class="form__input" id="answer-yes" />
+										<input type="radio" name="answer" class="form__input-radio" id="answer-yes" required />
 									</label>
 
-									<label for="answer-no" class="form__label">
+									<label for="answer-no" class="form__label-radio">
 										<p>Nie</p>
-										<input type="radio" name="answer-no" class="form__input" id="answer-no" />
+										<input type="radio" name="answer" class="form__input-radio" id="answer-no" />
 									</label>
 								</div>
 							</fieldset>
 
-							<div class="form__fieldset-date">
-								<p>Wybierz datę pobytu</p>
+							<fieldset class="form__fieldset-date">
+								<legend class="form__legend">Wybierz datę pobytu</legend>
 
-								<label for="date-from">
-									<p>Od kiedy planujesz pobyt? <span class="form__asterisk" aria-label="required">*</span></p>
-									<input type="date" name="date-from" class="form__input" id="input-date-from" required />
+								<label for="date-from" class="form__label-date">
+									<p>
+										Od kiedy planujesz pobyt? <span class="form__asterisk" aria-label="required">*</span>
+										<span class="form__error error">Uzupełnij datę</span>
+									</p>
 								</label>
+								<input type="date" name="date-from" class="form__input-date" id="input-date-from" required />
 
-								<label for="date-to">
-									<p>Do kiedy planujesz pobyt? <span class="form__asterisk" aria-label="required">*</span></p>
-									<input type="date" name="date-to" class="form__input" id="input-date-to" required />
+								<label for="date-to" class="form__label-date">
+									<p>
+										Do kiedy planujesz pobyt? <span class="form__asterisk" aria-label="required">*</span>
+										<span class="form__error error">Uzupełnij datę</span>
+									</p>
 								</label>
-							</div>
+								<input type="date" name="date-to" class="form__input-date" id="input-date-to" required />
+							</fieldset>
 
 							<label for="message">
 								<p>Wiadomość</p>
-								<textarea name="message" class="form__textarea" id="input-message"></textarea>
 							</label>
+							<textarea name="message" class="form__textarea" id="input-message"></textarea>
 
-							<button type="submit" class="form__button" id="btn-submit-form">Wyślij</button>
+							<button type="submit" class="form__button cta-btn" id="btn-submit-form">Wyślij</button>
 						</form>
 					</div>
 				</div>
