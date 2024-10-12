@@ -7,6 +7,7 @@ $bg-light: #fff8e8;
 $bg-darker: #f7eed3;
 $text-green: #cee793;
 $text-brown: #674636;
+$text-error: #ff6347;
 
 // FONTS
 $lato-thin: "latohairline";
@@ -18,8 +19,7 @@ $logo-font: "great_vibesregular";
 
 @font-face {
 	font-family: "latohairline";
-	src: url("../src/fonts/lato-thin-webfont.woff2") format("woff2"),
-		url("../src/fonts/lato-thin-webfont.woff") format("woff");
+	src: url("../src/fonts/lato-thin-webfont.woff2") format("woff2"), url("../src/fonts/lato-thin-webfont.woff") format("woff");
 	font-weight: 100;
 	font-style: normal;
 	font-display: swap;
@@ -27,8 +27,7 @@ $logo-font: "great_vibesregular";
 
 @font-face {
 	font-family: "latolight";
-	src: url("../src/fonts/lato-light-webfont.woff2") format("woff2"),
-		url("../src/fonts/lato-light-webfont.woff") format("woff");
+	src: url("../src/fonts/lato-light-webfont.woff2") format("woff2"), url("../src/fonts/lato-light-webfont.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -36,8 +35,7 @@ $logo-font: "great_vibesregular";
 
 @font-face {
 	font-family: "latoregular";
-	src: url("../src/fonts/lato-regular-webfont.woff2") format("woff2"),
-		url("../src/fonts/lato-regular-webfont.woff") format("woff");
+	src: url("../src/fonts/lato-regular-webfont.woff2") format("woff2"), url("../src/fonts/lato-regular-webfont.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -45,8 +43,7 @@ $logo-font: "great_vibesregular";
 
 @font-face {
 	font-family: "latobold";
-	src: url("../src/fonts/lato-bold-webfont.woff2") format("woff2"),
-		url("../src/fonts/lato-bold-webfont.woff") format("woff");
+	src: url("../src/fonts/lato-bold-webfont.woff2") format("woff2"), url("../src/fonts/lato-bold-webfont.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -55,8 +52,7 @@ $logo-font: "great_vibesregular";
 // LOGO FONT
 @font-face {
 	font-family: "great_vibesregular";
-	src: url("../src/fonts/greatvibes-regular-webfont.woff2") format("woff2"),
-		url("../src/fonts/greatvibes-regular-webfont.woff") format("woff");
+	src: url("../src/fonts/greatvibes-regular-webfont.woff2") format("woff2"), url("../src/fonts/greatvibes-regular-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }

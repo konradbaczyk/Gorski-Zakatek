@@ -1,15 +1,23 @@
 @use "../utils/variables" as *;
 @use "../utils/animations" as *;
 
+.header {
+	min-height: fit-content;
+}
+
 .navbar {
 	color: $white;
 	background-color: $text-brown;
 }
 
 .hero-section {
+	// min-height: 100svh;
 	color: $text-brown;
 	background-color: $bg-darker;
-	min-height: 100svh;
+}
+.info-box,
+.form {
+	margin: 0 auto;
 }
 
 .info-box {
@@ -18,6 +26,7 @@
 	background-color: $bg-light;
 
 	&__title {
+		width: 100%;
 		margin-bottom: 0.5rem;
 	}
 
@@ -26,13 +35,14 @@
 	}
 
 	&__contact {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 		font-family: $lato-regular, sans-serif;
 	}
 }
 
 .form {
-	width: 100%;
-
 	&__input,
 	&__textarea,
 	&__input-date,
@@ -44,7 +54,6 @@
 	&__input,
 	&__textarea {
 		width: 100%;
-
 		padding: 0.5rem;
 		font-size: 1.8rem;
 		color: $text-brown;
@@ -55,7 +64,7 @@
 	&__textarea {
 		max-width: 100%;
 		min-width: 100%;
-		min-height: 8rem;
+		min-height: 10rem;
 	}
 
 	&__fieldset-reservation,
@@ -85,4 +94,74 @@
 	&__button {
 		margin: 0 auto;
 	}
+
+	&__error {
+		color: $text-error;
+		opacity: 0;
+
+		&--active {
+			opacity: 1;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.info-box,
+	.form {
+		width: 80%;
+	}
+}
+
+@media (min-width: 768px) {
+	.info-box,
+	.form {
+		width: 70%;
+	}
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1100px) {
+	.contact-box {
+		display: flex;
+	}
+
+	.info-box,
+	.form {
+		width: 50%;
+		max-width: 700px;
+	}
+
+	.info-box {
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: column;
+
+		&__data {
+			margin-top: auto;
+		}
+
+		&__address {
+			margin-bottom: 5rem;
+		}
+	}
+
+	.form {
+		padding: 0 2rem;
+
+		&__answers {
+			justify-content: start;
+		}
+
+		&__button {
+			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
 }
