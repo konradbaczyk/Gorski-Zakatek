@@ -427,6 +427,10 @@ body {
 }
 .form__fieldset-date {
   margin-top: 0.5rem;
+  display: none;
+}
+.form__fieldset-date--active {
+  display: block;
 }
 .form__legend {
   margin-bottom: 0.5rem;

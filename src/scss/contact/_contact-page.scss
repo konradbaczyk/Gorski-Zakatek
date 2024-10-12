@@ -74,6 +74,11 @@
 
 	&__fieldset-date {
 		margin-top: 0.5rem;
+		display: none;
+
+		&--active {
+			display: block;
+		}
 	}
 
 	&__legend {
