@@ -17,3 +17,15 @@
 		backdrop-filter: blur(5px);
 	}
 }
+
+@keyframes showItem {
+	from {
+		opacity: 0;
+		transform: translateY(-1rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

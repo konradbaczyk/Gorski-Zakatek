@@ -11,7 +11,6 @@
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	// animation: zoom 60s 0.1s linear;
 }
 
 .hero-section {
@@ -25,6 +24,8 @@
 	&__title,
 	&__text {
 		font-family: $lato-thin, sans-serif;
+		opacity: 0;
+		animation: 1s 2s showItem forwards;
 	}
 
 	&__title {
@@ -47,6 +48,11 @@
 
 @media (min-width: 768px) {
 	.hero-section {
+		&__title,
+		&__text {
+			animation: 1s 2.5s showItem forwards;
+		}
+
 		&__title {
 			font-size: 11.3rem;
 		}
@@ -70,6 +76,11 @@
 }
 
 @media (min-width: 1200px) {
+	.header {
+		background-size: 130%;
+		animation: zoom 120s 0.3s linear;
+	}
+
 	.hero-section {
 		&__title {
 			font-size: 16rem;
