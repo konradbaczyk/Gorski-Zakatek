@@ -24,6 +24,7 @@ export const checkReservationAnswer = () => {
 	if (radioAnswers[0].checked) {
 		fieldsetDate.classList.add("form__fieldset-date--active");
 		inputsDates.forEach((input) => input.setAttribute("required", "true"));
+		// checkReservationDates();
 	} else {
 		fieldsetDate.classList.remove("form__fieldset-date--active");
 		inputsDates.forEach((input) => input.removeAttribute("required"));
@@ -32,7 +33,7 @@ export const checkReservationAnswer = () => {
 };
 
 export const checkReservationDates = () => {
-	if (inputDateFrom.value === "" || inputDateTo.value === "") {
+	if (radioAnswers[0].checked && (inputDateFrom.value === "" || inputDateTo.value === "")) {
 		errorDates.classList.add("form__error--active");
 	} else {
 		errorDates.classList.remove("form__error--active");

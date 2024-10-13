@@ -22,10 +22,7 @@
 							<a href="./gallery.html" class="navigation__menu-link"> Obejrzyj domek </a>
 						</li>
 						<li class="navigation__menu-item">
-							<a href="#" class="navigation__menu-link">Kontakt</a>
-						</li>
-						<li class="navigation__menu-item">
-							<a href="./reservation.html" class="navigation__menu-link navigation__menu-link--cta-btn cta-btn"> Zarezerwuj </a>
+							<a href="#" class="navigation__menu-link navigation__menu-link--cta-btn cta-btn"> Kontakt i rezerwacja </a>
 						</li>
 					</ul>
 				</nav>
@@ -74,7 +71,7 @@
 							<fieldset class="form__fieldset-reservation">
 								<legend class="form__legend">
 									Czy chcesz teraz zarezerwować pobyt?<span class="form__asterisk" aria-label="required">*</span>
-									<span class="form__error" id="fieldset-reservation-error">Uzupełnij odpowiedź</span>
+									<span class="form__error error" id="fieldset-reservation-error">Uzupełnij odpowiedź</span>
 								</legend>
 
 								<div class="form__answers">
@@ -93,7 +90,7 @@
 							<fieldset class="form__fieldset-date" id="fieldset-date">
 								<legend class="form__legend">
 									Wybierz datę pobytu
-									<span class="form__error" id="dates-error">Uzupełnij daty</span>
+									<span class="form__error error" id="dates-error">Uzupełnij daty</span>
 								</legend>
 
 								<label for="date-from" class="form__label-date">
@@ -112,7 +109,11 @@
 							</label>
 							<textarea name="message" class="form__textarea" id="input-message"></textarea>
 
-							<button type="submit" class="form__button cta-btn" id="btn-submit-form">Wyślij wiadomość</button>
+							<dialog class="modal" id="modal">
+								<p class="modal__text">Dziękujemy! Wkrótce się z Tobą skontaktujemy w celu potwierdzenia rezerwacji!</p>
+								<button class="modal__close-btn cta-btn" id="btn-close-modal">Zakmnij</button>
+							</dialog>
+							<button type="button" class="form__button cta-btn" id="btn-submit-form">Wyślij wiadomość</button>
 						</form>
 					</div>
 				</div>
@@ -120,7 +121,7 @@
 		</header>
 
 		<main>
-			<!-- <section class="map">
+			<section class="map">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6198.962905721316!2d22.335646310035266!3d49.21302481954515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bfc22bbe9eb5d%3A0x3420ee32a125f2e4!2sCisna%20103A%2C%2038-607%20Cisna!5e0!3m2!1spl!2spl!4v1728069852633!5m2!1spl!2spl"
 					width="100%"
@@ -129,7 +130,7 @@
 					allowfullscreen=""
 					loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</section> -->
+			</section>
 		</main>
 
 		<footer class="footer section">
@@ -158,9 +159,8 @@
 
 						<div class="footer__link-box">
 							<h3 class="footer__box-title">Strony</h3>
-							<a href="./reservation.html" class="footer__link cta-text"> Zarezerwuj </a>
+							<a href="#" class="footer__link cta-text"> Zarezerwuj </a>
 							<a href="./gallery.html" class="footer__link link-text"> Obejrzyj domek </a>
-							<a href="#" class="footer__link link-text"> Kontakt </a>
 						</div>
 
 						<div class="footer__media-box">

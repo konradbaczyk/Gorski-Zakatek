@@ -1,6 +1,5 @@
-const inputsRequired = document.querySelectorAll(".input-form[required]");
 
-const requiredInputs = [...inputsRequired];
+const inputsRequired = document.querySelectorAll(".input-form[required]");
 
 export const checkRequiredInputs = () => {
 	inputsRequired.forEach((input) => {

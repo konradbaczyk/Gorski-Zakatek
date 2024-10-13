@@ -110,6 +110,25 @@
 	}
 }
 
+.modal {
+	position: fixed;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2rem;
+	color: $text-brown;
+	background-color: $bg-light;
+
+	&__text {
+		margin-bottom: 2rem;
+	}
+
+	&__close-btn {
+		margin: 0 auto;
+		background-color: $bg-darker;
+	}
+}
+
 @media (min-width: 576px) {
 	.info-box,
 	.form {
