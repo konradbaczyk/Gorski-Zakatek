@@ -237,6 +237,51 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes showContentItem {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes showBigImage {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.showNavbarLogo {
+  opacity: 0;
+  animation: 1s 0.5s showItem forwards;
+}
+
+.showNavbarMobileBtn {
+  opacity: 0;
+  animation: 0.7s 1s showItem forwards;
+}
+
+.showNavbarFirstLink {
+  opacity: 0;
+  animation: 1s 1s showItem forwards;
+}
+
+.showNavbarSecondLink {
+  opacity: 0;
+  animation: 1s 1.5s showItem forwards;
+}
+
+.showContentItem {
+  animation: showContentItem both;
+  animation-timeline: view(85% 5%);
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -266,8 +311,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 100;
-  opacity: 0;
-  animation: 0.7s 1.5s showItem forwards;
 }
 .navigation__menu {
   position: fixed;
@@ -316,8 +359,6 @@ body {
   padding: 1rem 1rem 1rem 0;
   display: flex;
   font-size: 2.8rem;
-  opacity: 0;
-  animation: 1s 1s showItem forwards;
 }
 
 @media (min-width: 576px) {
@@ -353,13 +394,6 @@ body {
     width: fit-content;
     display: flex;
     align-items: center;
-    opacity: 0;
-  }
-  .navigation__menu-item:nth-of-type(1) {
-    animation: 1s 1.5s showItem forwards;
-  }
-  .navigation__menu-item:nth-of-type(2) {
-    animation: 1s 2s showItem forwards;
   }
   .navigation__menu-link {
     font-size: 2rem;
@@ -396,20 +430,34 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 2rem;
+  opacity: 0;
+  animation: 1.4s 0.5s showItem forwards;
 }
 .hero-section__header-img, .hero-section__text, .hero-section__surface, .hero-section__facilities {
   margin-bottom: 2rem;
 }
 .hero-section__header-img {
   max-width: 500px;
+  opacity: 0;
+  animation: 1.4s 0.8s showItem forwards;
 }
 .hero-section__info-box {
   max-width: 520px;
+  opacity: 0;
+  animation: 1.4s 1.3s showItem forwards;
 }
 .hero-section__data-title {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   opacity: 0.5;
+}
+.hero-section__surface {
+  opacity: 0;
+  animation: 1s 1.8s showItem forwards;
+}
+.hero-section__facilities {
+  opacity: 0;
+  animation: 1s 2.3s showItem forwards;
 }
 
 @media (min-width: 768px) {
@@ -474,6 +522,9 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 200;
   display: none;
+  opacity: 0;
+  scale: 0;
+  animation: 0.5s 0.2s showBigImage forwards;
 }
 .gallery-section__popup--active {
   display: block;
@@ -497,6 +548,7 @@ body {
   background-position: center;
   background-size: cover;
   z-index: 250;
+  transition: scale 0.3s;
 }
 .gallery-section__btn-close-popup {
   top: 2rem;
@@ -529,6 +581,11 @@ body {
 }
 .gallery__thumbnail {
   padding: 0.4rem 0;
+  transition: opacity 0.3s;
+}
+.gallery__thumbnail:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {

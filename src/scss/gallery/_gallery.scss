@@ -13,6 +13,9 @@
 		background-color: rgba(0, 0, 0, 0.9);
 		z-index: 200;
 		display: none;
+		opacity: 0;
+		scale: 0;
+		animation: 0.5s 0.2s showBigImage forwards;
 
 		&--active {
 			display: block;
@@ -41,6 +44,7 @@
 		background-position: center;
 		background-size: cover;
 		z-index: 250;
+		transition: scale 0.3s;
 	}
 
 	&__btn-close-popup {
@@ -79,6 +83,12 @@
 
 	&__thumbnail {
 		padding: 0.4rem 0;
+		transition: opacity 0.3s;
+
+		&:hover {
+			opacity: 0.7;
+			cursor: pointer;
+		}
 	}
 }
 

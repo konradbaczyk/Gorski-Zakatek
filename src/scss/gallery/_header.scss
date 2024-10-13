@@ -10,6 +10,8 @@
 	&__title {
 		width: fit-content;
 		margin-bottom: 2rem;
+		opacity: 0;
+		animation: 1.4s 0.5s showItem forwards;
 	}
 
 	&__header-img,
@@ -21,16 +23,30 @@
 
 	&__header-img {
 		max-width: 500px;
+		opacity: 0;
+		animation: 1.4s 0.8s showItem forwards;
 	}
 
 	&__info-box {
 		max-width: 520px;
+		opacity: 0;
+		animation: 1.4s 1.3s showItem forwards;
 	}
 
 	&__data-title {
 		font-size: 2rem;
 		margin-bottom: 0.5rem;
 		opacity: 0.5;
+	}
+
+	&__surface {
+		opacity: 0;
+		animation: 1s 1.8s showItem forwards;
+	}
+
+	&__facilities {
+		opacity: 0;
+		animation: 1s 2.3s showItem forwards;
 	}
 }
 

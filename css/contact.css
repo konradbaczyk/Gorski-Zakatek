@@ -237,6 +237,51 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes showContentItem {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes showBigImage {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.showNavbarLogo {
+  opacity: 0;
+  animation: 1s 0.5s showItem forwards;
+}
+
+.showNavbarMobileBtn {
+  opacity: 0;
+  animation: 0.7s 1s showItem forwards;
+}
+
+.showNavbarFirstLink {
+  opacity: 0;
+  animation: 1s 1s showItem forwards;
+}
+
+.showNavbarSecondLink {
+  opacity: 0;
+  animation: 1s 1.5s showItem forwards;
+}
+
+.showContentItem {
+  animation: showContentItem both;
+  animation-timeline: view(85% 5%);
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -266,8 +311,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 100;
-  opacity: 0;
-  animation: 0.7s 1.5s showItem forwards;
 }
 .navigation__menu {
   position: fixed;
@@ -316,8 +359,6 @@ body {
   padding: 1rem 1rem 1rem 0;
   display: flex;
   font-size: 2.8rem;
-  opacity: 0;
-  animation: 1s 1s showItem forwards;
 }
 
 @media (min-width: 576px) {
@@ -353,13 +394,6 @@ body {
     width: fit-content;
     display: flex;
     align-items: center;
-    opacity: 0;
-  }
-  .navigation__menu-item:nth-of-type(1) {
-    animation: 1s 1.5s showItem forwards;
-  }
-  .navigation__menu-item:nth-of-type(2) {
-    animation: 1s 2s showItem forwards;
   }
   .navigation__menu-link {
     font-size: 2rem;
@@ -415,15 +449,25 @@ body {
 .info-box__title {
   width: 100%;
   margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: 1.4s 0.5s showItem forwards;
+}
+.info-box__text {
+  opacity: 0;
+  animation: 1.4s 0.9s showItem forwards;
 }
 .info-box__address {
   margin: 3rem 0;
+  opacity: 0;
+  animation: 1.4s 1.4s showItem forwards;
 }
 .info-box__contact {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   font-family: "latoregular", sans-serif;
+  opacity: 0;
+  animation: 1.4s 1.8s showItem forwards;
 }
 
 .form__input, .form__textarea, .form__input-date, .form__fieldset-reservation {
@@ -467,6 +511,8 @@ body {
 }
 .form__button {
   margin: 0 auto;
+  opacity: 0;
+  animation: 1.4s 3s showItem forwards;
 }
 .form__error {
   color: #ff6347;
@@ -474,6 +520,24 @@ body {
 }
 .form__error--active {
   opacity: 1;
+}
+.form__label-name, .form__label-last-name, .form__label-email, .form__fieldset-reservation, .form__label-message {
+  opacity: 0;
+}
+.form__label-name {
+  animation: 1.4s 2s showItem forwards;
+}
+.form__label-last-name {
+  animation: 1.4s 2.2s showItem forwards;
+}
+.form__label-email {
+  animation: 1.4s 2.4s showItem forwards;
+}
+.form__fieldset-reservation {
+  animation: 1.4s 2.6s showItem forwards;
+}
+.form__label-message {
+  animation: 1.4s 2.8s showItem forwards;
 }
 
 .modal {

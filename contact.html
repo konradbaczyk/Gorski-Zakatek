@@ -50,19 +50,19 @@
 						</div>
 
 						<form class="form text-content section-text">
-							<label for="name">
+							<label for="name" class="form__label-name">
 								Imię<span>*</span>
 								<span class="form__error error">Uzupełnij pole</span>
 								<input type="text" name="name" class="form__input input-form" id="input-name" required />
 							</label>
 
-							<label for="last-name">
+							<label for="last-name" class="form__label-last-name">
 								Nazwisko<span class="form__asterisk" aria-label="required">*</span>
 								<span class="form__error error">Uzupełnij pole</span>
 								<input type="text" name="last-name" class="form__input input-form" id="input-last-name" required />
 							</label>
 
-							<label for="email">
+							<label for="email" class="form__label-email">
 								Email<span class="form__asterisk" aria-label="required">*</span>
 								<span class="form__error error">Uzupełnij pole</span>
 								<input type="text" name="email" class="form__input input-form" id="input-email" required />
@@ -104,10 +104,10 @@
 								<input type="date" name="date-to" class="form__input-date" id="input-date-to" />
 							</fieldset>
 
-							<label for="message">
+							<label for="message" class="form__label-message">
 								<p>Wiadomość</p>
+								<textarea name="message" class="form__textarea" id="input-message"></textarea>
 							</label>
-							<textarea name="message" class="form__textarea" id="input-message"></textarea>
 
 							<dialog class="modal" id="modal">
 								<p class="modal__text">Dziękujemy! Wkrótce się z Tobą skontaktujemy w celu potwierdzenia rezerwacji!</p>

@@ -25,7 +25,7 @@
 	&__text {
 		font-family: $lato-thin, sans-serif;
 		opacity: 0;
-		animation: 1s 2s showItem forwards;
+		animation: 1s 1.5s showItem forwards;
 	}
 
 	&__title {
@@ -50,7 +50,7 @@
 	.hero-section {
 		&__title,
 		&__text {
-			animation: 1s 2.5s showItem forwards;
+			animation: 1s 2s showItem forwards;
 		}
 
 		&__title {
