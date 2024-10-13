@@ -450,16 +450,16 @@ body {
   width: 100%;
   margin-bottom: 0.5rem;
   opacity: 0;
-  animation: 1.4s 0.5s showItem forwards;
+  animation: 1.2s 0.3s showItem forwards;
 }
 .info-box__text {
   opacity: 0;
-  animation: 1.4s 0.9s showItem forwards;
+  animation: 1.2s 0.7s showItem forwards;
 }
 .info-box__address {
   margin: 3rem 0;
   opacity: 0;
-  animation: 1.4s 1.4s showItem forwards;
+  animation: 1.2s 1.2s showItem forwards;
 }
 .info-box__contact {
   display: flex;
@@ -467,7 +467,7 @@ body {
   gap: 0.5rem;
   font-family: "latoregular", sans-serif;
   opacity: 0;
-  animation: 1.4s 1.8s showItem forwards;
+  animation: 1.2s 1.5s showItem forwards;
 }
 
 .form__input, .form__textarea, .form__input-date, .form__fieldset-reservation {
@@ -525,19 +525,19 @@ body {
   opacity: 0;
 }
 .form__label-name {
-  animation: 1.4s 2s showItem forwards;
+  animation: 1.4s 1.8s showItem forwards;
 }
 .form__label-last-name {
-  animation: 1.4s 2.2s showItem forwards;
+  animation: 1.4s 2s showItem forwards;
 }
 .form__label-email {
-  animation: 1.4s 2.4s showItem forwards;
+  animation: 1.4s 2.2s showItem forwards;
 }
 .form__fieldset-reservation {
-  animation: 1.4s 2.6s showItem forwards;
+  animation: 1.4s 2.4s showItem forwards;
 }
 .form__label-message {
-  animation: 1.4s 2.8s showItem forwards;
+  animation: 1.4s 2.6s showItem forwards;
 }
 
 .modal {

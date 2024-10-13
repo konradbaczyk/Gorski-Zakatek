@@ -29,18 +29,18 @@
 		width: 100%;
 		margin-bottom: 0.5rem;
 		opacity: 0;
-		animation: 1.4s 0.5s showItem forwards;
+		animation: 1.2s 0.3s showItem forwards;
 	}
 
 	&__text {
 		opacity: 0;
-		animation: 1.4s 0.9s showItem forwards;
+		animation: 1.2s 0.7s showItem forwards;
 	}
 
 	&__address {
 		margin: 3rem 0;
 		opacity: 0;
-		animation: 1.4s 1.4s showItem forwards;
+		animation: 1.2s 1.2s showItem forwards;
 	}
 
 	&__contact {
@@ -49,7 +49,7 @@
 		gap: 0.5rem;
 		font-family: $lato-regular, sans-serif;
 		opacity: 0;
-		animation: 1.4s 1.8s showItem forwards;
+		animation: 1.2s 1.5s showItem forwards;
 	}
 }
 
@@ -131,19 +131,19 @@
 	}
 
 	&__label-name {
-		animation: 1.4s 2s showItem forwards;
+		animation: 1.4s 1.8s showItem forwards;
 	}
 	&__label-last-name {
-		animation: 1.4s 2.2s showItem forwards;
+		animation: 1.4s 2s showItem forwards;
 	}
 	&__label-email {
-		animation: 1.4s 2.4s showItem forwards;
+		animation: 1.4s 2.2s showItem forwards;
 	}
 	&__fieldset-reservation {
-		animation: 1.4s 2.6s showItem forwards;
+		animation: 1.4s 2.4s showItem forwards;
 	}
 	&__label-message {
-		animation: 1.4s 2.8s showItem forwards;
+		animation: 1.4s 2.6s showItem forwards;
 	}
 }
 
